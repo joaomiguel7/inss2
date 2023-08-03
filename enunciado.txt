@@ -1,0 +1,48 @@
+Calculadora de Salário Líquido
+
+50 pontos
+Data de entrega: 03/08/2023
+Objetivo: Desenvolver um programa  que calcule o salário líquido de um funcionário, considerando os descontos do INSS e do Imposto de Renda retido na fonte.
+
+Descrição: Você foi contratado(a) por uma empresa para desenvolver um programa que permita calcular o salário líquido de um funcionário com base no salário bruto informado e nas alíquotas dos descontos do INSS e Imposto de Renda.
+
+O cálculo deve seguir as seguintes regras:
+
+Salário de Contribuição (R$) e  Alíquota progressiva para fins de recolhimento ao INSS
+Até R$ 1.320,00 - 7,5%
+De R$ 1.320,01 a R$ 2.571,29 - 9%
+De R$ 2.571,30 até R$ 3.856,94 - 12%
+De R$ 3.856,95 até R$ 7.507,49 -  14%
+
+Para o Imposto de Renda:
+Base de Cálculo (R$), Alíquota (%) e Dedução do IR (R$)
+Até R$ 2.112,00 - 0 - R$ 0
+De R$ 2.112,01 até R$ 2.826,65 - 7,5 - R$ 158,40
+De R$ 2.826,66 até R$ 3.751,05 - 15 - R$ 370,40
+De R$ 3.751,06 até R$ 4.664,68 - 22,5 - R$ 651,73
+Acima de R$ 4.664,68 - 27,5 - R$ 884,96
+
+O salário líquido é calculado da seguinte forma:
+Base de Cálculo = salarioBruto - desconto do INSS - (n° de dependentes * 189.59)
+salário líquido = salário bruto - desconto do INSS - desconto do Imposto de Renda
+
+Tarefas:
+ - Crie um algoritmo para calcular o salário líquido de um funcionário, solicitando ao usuário o valor do salário bruto e a quantidade de dependentes.
+ - Realize as devidas verificações para aplicar as alíquotas corretas do INSS e Imposto de Renda de acordo com o valor do salário bruto.
+
+Apresente:
+ - Resultado do INSS
+ - IRRF
+ - Alíquota utilizada no IRFF
+ - Salário líquido do usuário.
+
+Observações:
+
+ - Utilize variáveis do tipo real para armazenar o salário bruto, o desconto do INSS, o desconto do Imposto de Renda e o salário líquido.
+ -  Lembre-se de utilizar estruturas condicionais (se...entao) para aplicar as alíquotas corretas de desconto.
+ -  Teste o programa com diferentes valores de salário bruto para verificar se os descontos estão sendo calculados corretamente.
+ - Aprimore a apresentação do resultado, incluindo mensagens informativas para o usuário, como o valor do desconto do INSS e do Imposto de Renda.
+
+
+Referência:
+https://www.calcule.net/trabalhista/calculo-imposto-de-renda-irrf/#tabela-ir_52023
